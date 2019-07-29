@@ -1,5 +1,6 @@
 # DiscriminantValidity
 *ONLINE SUPPLEMENTS
+
 Online Supplement1: Chi2(1) scaling example.docx
 
 Online Supplement2: Full simulation code.docx
@@ -13,3 +14,17 @@ Online Supplement4: Tutorial on calcuations.docx
 SPSS Data format, used in AMOS: ACSICovData.sav
 
 txt format, used in Mplus: ACSICovData.dat, ACSICovData.txt
+
+
+* Software syntax FILES
+
+AMOS: ACSITutorial.amw
+
+LISREL: ACSI.ls8
+
+Mplus: ACSITutorial.inp
+
+R: ACSIdemo.R
+
+STATA: ACSIdemo.do
+
