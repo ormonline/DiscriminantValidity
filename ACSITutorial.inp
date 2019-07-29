@@ -1,0 +1,28 @@
+TITLE: Unconstrained CFA with confidence intervals
+
+DATA:
+	FILE IS ACSICovData.dat;
+	TYPE = COVARIANCE;
+	NOBSERVATIONS = 10417;
+	
+VARIABLE:
+NAMES ARE ACSI1 ACSI2 ACSI3 CUEX1 CUEX2 CUEX3 PERQ1 PERQ2 PERQ3 PERV1 PERV2;
+	
+MODEL:
+	! Free the first loadings with stars (*)
+	ACSI BY ACSI1* ACSI2 ACSI3;
+	CUEX BY CUEX1* CUEX2 CUEX3;
+	PERQ BY PERQ1* PERQ2 PERQ3;
+	PERV BY PERV1* PERV2;
+	
+	! Constrain the factor variances
+	ACSI@1;
+	CUEX@1;
+	PERQ@1;
+	PERV@1;
+	
+OUTPUT:
+	! Output the confidence intervals
+	CINTERVAL;
+	! Show standardized coefficients to calculate AVE value
+	STAND;
