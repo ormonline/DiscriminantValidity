@@ -12,6 +12,7 @@ Online Supplement4: Tutorial on calcuations.docx
 
 
 * DATA FILES
+
 SPSS Data format, used in AMOS: ACSICovData.sav
 
 txt format, used in Mplus: ACSICovData.dat, ACSICovData.txt
